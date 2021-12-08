@@ -8,6 +8,7 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 <p align="center">
   <img src="./figures/framework.png" width="700"/>
+  <figcaption align = "center"><b>Fig.1  MB-SupCon: Microbiome-based Supervised Contrastive Learning Framework</b></figcaption>
 </p>
 
 ## About this repository
