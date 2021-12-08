@@ -74,7 +74,7 @@ Some main packages used in this study:
 
 `plotly`: `4.14.3`.
 
-## Contact
+## Contacts
 
 **Sen Yang:**
 
