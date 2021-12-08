@@ -6,10 +6,13 @@ The human microbiome consists of trillions of microorganisms cohabitating a vari
 
 Here, we propose a novel integrative modeling framework, Microbiome-based Supervised Contrastive Learning Framework (MB-SupCon) to improve microbiome-based prediction models. By integrating microbiome and metabolomics data under a supervised contrastive learning scheme, MB-SupCon trained two encoder networks to maximize the similarity between microbiome embedding and metabolomics embedding. Compared to the original microbiome data, the microbiome embedding can lead to improved prediction performances.
 
-<figure align="center">
+<p align="center">
   <img src="./figures/framework.png" width="700"/>
-  <figcaption align = "center"><b>Fig.1  MB-SupCon: Microbiome-based Supervised Contrastive Learning Framework</b></figcaption>
-</figure>
+</p>
+
+<p align = "center">
+<b>Fig.1</b> MB-SupCon: Microbiome-based Supervised Contrastive Learning Framework
+</p>
 
 ## About this repository
 
