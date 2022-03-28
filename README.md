@@ -66,15 +66,17 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 `mbsimclr.py`: the python script for building a MB-simCLR model.
 
-## Packages versions 
+## System information and packages versions 
 
-Some system information - System: `Linux`; Release: `3.10.0-957.el7.x86_64`.
+- System information:
 
-GPU: `Tesla V100-SXM2-32GB`.
+System: `Linux`; Release: `3.10.0-957.el7.x86_64`;
+
+GPU: `Tesla V100-SXM2-32GB`;
+
+- Version of Python and some important packages used in this repository:
 
 Python version: `3.8.5`.
-
-Some important packages used in this repository:
 
 `pytorch`: `1.7.1` (Build: `py3.8_cuda11.0.221_cudnn8.0.5_0`);
 
