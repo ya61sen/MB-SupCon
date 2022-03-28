@@ -62,7 +62,7 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 `plotting_utils.py`, `pred_utils.py`, `utils_eval.py`: utility functions;
 
-`mbsupcon.py`: the core python script for building a MB-SupCon model;
+`mbsupcon.py`: the python script for building a MB-SupCon model;
 
 `mbsimclr.py`: the python script for building a MB-simCLR model.
 
