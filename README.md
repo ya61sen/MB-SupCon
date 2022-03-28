@@ -28,19 +28,19 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 4. Output of `mixOmics` methods (sPLSDA, sPLS and DIABLO).
 
-"tuning" folder includes the Jupyter Notebooks for tuning and result visualization. All tuning results are saved in "tuning/save_tuning" folder;
+"`tuning`" folder includes the Jupyter Notebooks for tuning and result visualization. All tuning results are saved in "tuning/save_tuning" folder;
 
 *(Note: detailed tuning results are not included in this repository because of the huge amount and size of the files. You can easily reproduce the tuning results by running notebooks `1b-i - tune with random seeds 1-3.ipynb`, `1b-ii - tune with random seeds 4-6.ipynb`, `1b-iii - tune with random seeds 7-9.ipynb` and `1b-iv - tune with random seeds 10-12.ipynb`.)*
 
-"embeddings" folder includes feature embedding by MB-SupCon in representation space for all covariates.
+"`embeddings`" folder includes feature embedding by MB-SupCon in representation space for all covariates.
 
-"figures" folder includes all loss curves of MB-SupCon and generated lower-dimensional scatter plots by different methods including MB-SupCon. 
+"`figures`" folder includes all loss curves of MB-SupCon and generated lower-dimensional scatter plots by different methods including MB-SupCon. 
 
-"models" folder includes trained models. 
+"`models`" folder includes trained models. 
 
-"outputs" folder includes the output PC1 and PC2 scores (by PCA) used for lower-dimensional scatter plots.
+"`outputs`" folder includes the output PC1 and PC2 scores (by PCA) used for lower-dimensional scatter plots.
 
-"other methods" folder includes the codes, plots and outputs of the other methods including MLP, MB-simCLR, `mixOmics` methods (sPLSDA, sPLS and DIABLO) for comparison with MB-SupCon.
+"`other_methods`" folder includes the codes, plots and outputs of the other methods including MLP, MB-simCLR, `mixOmics` methods (sPLSDA, sPLS and DIABLO) for comparison with MB-SupCon.
 
 **Codes**
 
