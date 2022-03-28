@@ -24,41 +24,53 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 2. Clinical covariates data of all subjects;
 
-3. Output index labels for training, validation and testing datasets;
+3. Index labels for training, validation and testing datasets used for `mixOmics` methods;
 
-4. Output PC1 and PC2 scores (by PCA) used for lower-dimensional scatter plots.
+4. Output of `mixOmics` methods (sPLSDA, sPLS and DIABLO).
 
-"feature_data" folder includes feature embeddings by MB-SupCon in representation space for all covariates.
+"tuning" folder includes the Jupyter Notebooks for tuning and result visualization. All tuning results are saved in "tuning/save_tuning" folder;
 
-"figures" folder includes all loss curves and generated lower-dimensional scatter plots. 
+*(Note: detailed tuning results are not included in this repository because of the huge amount and size of the files. You can easily reproduce the tuning results by running notebook `1b-i - tune with random seeds 1-3.ipynb`, `1b-ii - tune with random seeds 4-6.ipynb`, `1b-iii - tune with random seeds 7-9.ipynb` and `1b-iv - tune with random seeds 10-12.ipynb`.)*
+
+"embeddings" folder includes feature embedding by MB-SupCon in representation space for all covariates.
+
+"figures" folder includes all loss curves of MB-SupCon and generated lower-dimensional scatter plots by different methods including MB-SupCon. 
 
 "models" folder includes trained models. 
 
-"results" folder includes some history data during training.
+"outputs" folder includes the output PC1 and PC2 scores (by PCA) used for lower-dimensional scatter plots.
 
-"other methods" folder includes the codes, plots and outputs of the other methods for comparison with MB-SupCon.
+"other methods" folder includes the codes, plots and outputs of the other methods including MLP, MB-simCLR, `mixOmics` methods (sPLSDA, sPLS and DIABLO) for comparison with MB-SupCon.
 
 **Codes**
 
-`1a - train MB-SupCon_categorical covariates.ipynb`: Jupyter Notebook used for training MB-SupCon models for all covaraites and generating corresponding feature embeddings in the representation domain;
+`1a - MB-SupCon_categorical covariates.ipynb`: the main Jupyter Notebook used to 
 
-`2a - prediction from embeddings of MB-SupCon.ipynb`: Jupyter Notebook used for prediction of each covariates by logistic regression with elastic net regularization;
+1. train MB-SupCon models for different covaraites;
 
-`3a - lower-dim plotting by PCA on embeddings of MB-SupCon.ipynb`: Jupyter Notebook used for performing PCA on embeddings and plotting on the lower-dimensional space (PC2 vs. PC1; colored by different covariate labels);
+2. output and save corresponding feature embedding in the representation domain;
 
-`MB_SupCon_utils.py`, `plotting_utils.py`, `pred_utils.py`, `utils_eval.py`: utility functions;
+3. make predictions of different covariates based on embedding of MB-SupCon and original data, and calculate the average prediction accuracy on testing datasets from multiple training-validation-testing splits;
 
-`supervised_loss.py`: a function used for calculating supervised contrastive loss.
+3. generate scatter plots on lower-dimensional space by PCA *(Note: you can choose other dimensionality reduction techniques such as t-SNE and UMAP)*.
+
+`supervised_loss.py`: a function used for calculating supervised contrastive loss;
+
+`plotting_utils.py`, `pred_utils.py`, `utils_eval.py`: utility functions;
+
+`mbsupcon.py`: the core python script for building a MB-SupCon model;
+
+`mbsimclr.py`: the python script for building a MB-simCLR model.
 
 ## Packages versions 
 
 Some system information - System: `Linux`; Release: `3.10.0-957.el7.x86_64`.
 
-GPU: `Tesla V100-PCIE-32GB`.
+GPU: `Tesla V100-SXM2-32GB`.
 
 Python version: `3.8.5`.
 
-Some main packages used in this study:
+Some important packages used in this repository:
 
 `pytorch`: `1.7.1` (Build: `py3.8_cuda11.0.221_cudnn8.0.5_0`);
 
@@ -70,9 +82,7 @@ Some main packages used in this study:
 
 `matplotlib`: `3.3.2`;
 
-`seaborn`: `0.11.2`;
-
-`plotly`: `4.14.3`.
+`seaborn`: `0.11.2`.
 
 ## Contacts
 
