@@ -72,7 +72,7 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 System: `Linux`; Release: `3.10.0-957.el7.x86_64`;
 
-GPU: `Tesla V100-SXM2-32GB`;
+GPU: `Tesla V100-SXM2-32GB`.
 
 - Version of Python and some important packages used in this repository:
 
