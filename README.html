@@ -397,11 +397,15 @@ pre code {
 <p><strong>Codes</strong></p>
 <p><code>1a - MB-SupCon_categorical covariates.ipynb</code>: the main Jupyter Notebook used to</p>
 <ol style="list-style-type: decimal">
-<li><p>train MB-SupCon models for different covaraites;</p></li>
+<li>train MB-SupCon models for different covaraites;</li>
+</ol>
+<p><em>(Note: the best combination of hyperparameters are chosen based on the tuning result. Details can be found in the Jupyter Notebook located at <code>./tuning/1b-v - save and visualize the tuning results_random seeds_1-12.ipynb</code>.)</em></p>
+<ol start="2" style="list-style-type: decimal">
 <li><p>output and save corresponding feature embedding in the representation domain;</p></li>
 <li><p>make predictions of different covariates based on embedding of MB-SupCon and original data, and calculate the average prediction accuracy on testing datasets from multiple training-validation-testing splits;</p></li>
-<li><p>generate scatter plots on lower-dimensional space by PCA <em>(Note: you can choose other dimensionality reduction techniques such as t-SNE and UMAP)</em>.</p></li>
+<li><p>generate scatter plots on lower-dimensional space by PCA</p></li>
 </ol>
+<p><em>(Note: you can choose other dimensionality reduction techniques, such as t-SNE and UMAP)</em>.</p>
 <p><code>supervised_loss.py</code>: a function used for calculating supervised contrastive loss;</p>
 <p><code>plotting_utils.py</code>, <code>pred_utils.py</code>, <code>utils_eval.py</code>: utility functions;</p>
 <p><code>mbsupcon.py</code>: the core python script for building a MB-SupCon model;</p>

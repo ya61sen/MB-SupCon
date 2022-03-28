@@ -48,11 +48,15 @@ Here, we propose a novel integrative modeling framework, Microbiome-based Superv
 
 1. train MB-SupCon models for different covaraites;
 
+  *(Note: the best combination of hyperparameters are chosen based on the tuning result. Details can be found in the Jupyter Notebook located at `./tuning/1b-v - save and visualize the tuning results_random seeds_1-12.ipynb`.)*
+
 2. output and save corresponding feature embedding in the representation domain;
 
 3. make predictions of different covariates based on embedding of MB-SupCon and original data, and calculate the average prediction accuracy on testing datasets from multiple training-validation-testing splits;
 
-3. generate scatter plots on lower-dimensional space by PCA *(Note: you can choose other dimensionality reduction techniques such as t-SNE and UMAP)*.
+3. generate scatter plots on lower-dimensional space by PCA 
+
+*(Note: you can choose other dimensionality reduction techniques, such as t-SNE and UMAP)*.
 
 `supervised_loss.py`: a function used for calculating supervised contrastive loss;
 
