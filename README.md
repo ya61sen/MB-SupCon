@@ -1,5 +1,28 @@
 # MB-SupCon: Microbiome-based predictive models via Supervised Contrastive Learning
 
+### Reference
+
+`
+@article{yang2022mb,
+
+    title={MB-SupCon: Microbiome-based Predictive Models via Supervised Contrastive Learning},
+  
+    author={Yang, Sen and Wang, Shidan and Wang, Yiqing and Rong, Ruichen and Kim, Jiwoong and Li, Bo and Koh, Andrew Y and Xiao, Guanghua and Li, Qiwei and Liu, Dajiang J and others},
+  
+    journal={Journal of Molecular Biology},
+  
+    volume={434},
+  
+    number={15},
+  
+    pages={167693},
+  
+    year={2022},
+  
+    publisher={Elsevier}
+}
+`
+
 ## Introduction
 
 The human microbiome consists of trillions of microorganisms cohabitating a variety of body niches. Microbiota can modulate the host physiology through microbiota-derived molecule and metabolite interactions. Microbiome-based biomarkers have great potential for numerous disease states but current approaches have yielded limited success. 
