@@ -90,7 +90,7 @@ Python version: `3.8.5`.
 
 `seaborn`: `0.11.2`.
 
-### BibTeX Citation
+## BibTeX Citation
 
 ```
 @article{yang2022mb,
@@ -104,8 +104,6 @@ Python version: `3.8.5`.
     publisher = {Elsevier}
   }
 ```
-
-
 
 ## Contacts
 
